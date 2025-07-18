@@ -1,121 +1,186 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ร้านขายกล้องฟิล์มวินเทจ</title>
-  <style>
-    body {
-      font-family: 'Georgia', serif;
-      background-color: #2e2e2e;
-      color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ร้านขายกล้องฟิล์มวินเทจ</title>
+<style>
+body {
+font-family: 'Georgia', serif;
+background-color: #2e2e2e;
+color: #f5f5f5;
+margin: 0;
+padding: 0;
+}
 
-    header {
-      background-color: #4b3f2f;
-      padding: 20px;
-      text-align: center;
-    }
+header {
+background-color: #4b3f2f;
+padding: 20px;
+text-align: center;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #d2b48c;
-    }
+header h1 {
+margin: 0;
+font-size: 2.5em;
+color: #d2b48c;
+}
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 20px;
+}
 
-    .camera-card {
-      background-color: #3f3f3f;
-      border: 1px solid #5c5c5c;
-      border-radius: 10px;
-      margin: 15px;
-      width: 300px;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 0 10px #000;
-    }
+.camera-card {
+background-color: #3f3f3f;
+border: 1px solid #5c5c5c;
+border-radius: 10px;
+margin: 15px;
+width: 300px;
+padding: 15px;
+text-align: center;
+box-shadow: 0 0 10px #000;
+}
 
-    .camera-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
+.camera-card img {
+width: 100%;
+height: auto;
+border-radius: 5px;
+}
 
-    .camera-card h2 {
-      color: #d2b48c;
-      margin: 10px 0;
-    }
+.camera-card h2 {
+color: #d2b48c;
+margin: 10px 0;
+}
 
-    .camera-card p {
-      font-size: 1.2em;
-      color: #ccc;
-    }
+.camera-card p {
+font-size: 1.2em;
+color: #ccc;
+margin: 5px 0;
+}
 
-    footer {
-      background-color: #4b3f2f;
-      text-align: center;
-      padding: 10px;
-      color: #aaa;
-    }
-  </style>
+.specs {
+text-align: left;
+font-size: 0.95em;
+color: #bbb;
+margin-top: 10px;
+}
+
+.specs ul {
+padding-left: 20px;
+}
+
+footer {
+background-color: #4b3f2f;
+text-align: center;
+padding: 10px;
+color: #aaa;
+}
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>ร้านกล้องฟิล์มวินเทจ</h1>
-    <p>เลือกกล้องฟิล์ม Pentax ที่คุณชื่นชอบ</p>
-  </header>
+<header>
+<h1>ร้านกล้องฟิล์มวินเทจ</h1>
+<p>เลือกกล้องฟิล์ม Pentax ที่คุณชื่นชอบ</p>
+</header>
 
-  <div class="container">
-    <!-- กล้องแต่ละรุ่น -->
-    <div class="camera-card">
-      <img src="pentax-k1000.jpg" alt="Pentax K1000">
-      <h2>Pentax K1000</h2>
-      <p>ราคา: 1,587 บาท</p>
-    </div>
+<div class="container">
+<!-- Pentax K1000 -->
+<div class="camera-card">
+<img src="https://example.com/pentax-k1000.jpg" alt="Pentax K1000">
+<h2>Pentax K1000</h2>
+<p>ราคา: 1,587 บาท</p>
+<div class="specs">
+<ul>
+<li>ระบบแมนนวลล้วน</li>
+<li>เลนส์เมาท์ K</li>
+<li>ความเร็วชัตเตอร์ 1/1000s ถึง 1s</li>
+<li>ไม่มีแฟลชในตัว</li>
+</ul>
+</div>
+</div>
 
-    <div class="camera-card">
-      <img src="pentax-17.jpg" alt="Pentax 17">
-      <h2>Pentax 17</h2>
-      <p>ราคา: 1,234 บาท</p>
-    </div>
+<!-- Pentax 17 -->
+<div class="camera-card">
+<img src="https://example.com/pentax-17.jpg" alt="Pentax 17">
+<h2>Pentax 17</h2>
+<p>ราคา: 1,234 บาท</p>
+<div class="specs">
+<ul>
+<li>ฟอร์แมตฟิล์ม Half-frame 35mm</li>
+<li>เลนส์ 25mm f/3.5</li>
+<li>ระบบโฟกัสโซน</li>
+<li>แฟลชในตัว</li>
+</ul>
+</div>
+</div>
 
-    <div class="camera-card">
-      <img src="pentax-me-super.jpg" alt="Pentax ME Super">
-      <h2>Pentax ME Super</h2>
-      <p>ราคา: 1,912 บาท</p>
-    </div>
+<!-- Pentax ME Super -->
+<div class="camera-card">
+<img src="https://example.com/pentax-me-super.jpg" alt="Pentax ME Super">
+<h2>Pentax ME Super</h2>
+<p>ราคา: 1,912 บาท</p>
+<div class="specs">
+<ul>
+<li>โหมดอัตโนมัติและแมนนวล</li>
+<li>เลนส์เมาท์ K</li>
+<li>ความเร็วชัตเตอร์สูงสุด 1/2000s</li>
+<li>ช่องมองภาพขนาดใหญ่</li>
+</ul>
+</div>
+</div>
 
-    <div class="camera-card">
-      <img src="pentax-mg.jpg" alt="Pentax MG">
-      <h2>Pentax MG</h2>
-      <p>ราคา: 1,045 บาท</p>
-    </div>
+<!-- Pentax MG -->
+<div class="camera-card">
+<img src="https://example.com/pentax-mg.jpg" alt="Pentax MG">
+<h2>Pentax MG</h2>
+<p>ราคา: 1,045 บาท</p>
+<div class="specs">
+<ul>
+<li>โหมดอัตโนมัติล้วน</li>
+<li>เลนส์เมาท์ K</li>
+<li>ความเร็วชัตเตอร์ 1/1000s</li>
+<li>มีไฟแสดงสถานะในช่องมองภาพ</li>
+</ul>
+</div>
+</div>
 
-    <div class="camera-card">
-      <img src="pentax-spotmatic.jpg" alt="Pentax SPORTMATIC">
-      <h2>Pentax SPOTMATIC</h2>
-      <p>ราคา: 1,678 บาท</p>
-    </div>
+<!-- Pentax SPORTMATIC -->
+<div class="camera-card">
+<img src="https://example.com/pentax-sportmatic.jpg" alt="Pentax SPORTMATIC">
+<h2>Pentax SPORTMATIC</h2>
+<p>ราคา: 1,678 บาท</p>
+<div class="specs">
+<ul>
+<li>ระบบแมนนวล</li>
+<li>เลนส์เมาท์ M42</li>
+<li>โครงสร้างโลหะแข็งแรง</li>
+<li>มีเข็มวัดแสงแบบเข็ม</li>
+</ul>
+</div>
+</div>
 
-    <div class="camera-card">
-      <img src="pentax-p30.jpg" alt="Pentax P30">
-      <h2>Pentax P30</h2>
-      <p>ราคา: 1,321 บาท</p>
-    </div>
-  </div>
+<!-- Pentax P30 -->
+<div class="camera-card">
+<img src="https://example.com/pentax-p30.jpg" alt="Pentax P30">
+<h2>Pentax P30</h2>
+<p>ราคา: 1,321 บาท</p>
+<div class="specs">
+<ul>
+<li>โหมดอัตโนมัติและแมนนวล</li>
+<li>เลนส์เมาท์ K-A</li>
+<li>รองรับเลนส์ออโต้โฟกัสบางรุ่น</li>
+<li>มีระบบวัดแสง TTL</li>
+</ul>
+</div>
+</div>
+</div>
 
-  <footer>
-    <p>© 2025 ร้านกล้องฟิล์มวินเทจ | Chiang Mai, Thailand</p>
-  </footer>
+<footer>
+<p>© 2025 ร้านกล้องฟิล์มวินเทจ | Chiang Mai, Thailand</p>
+</footer>
 
 </body>
 </html>
